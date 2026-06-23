@@ -2,13 +2,13 @@ import { useContext, useEffect, useState } from "react";
 import { BsStopwatch } from "react-icons/bs";
 import { FaEdit } from "react-icons/fa";
 import { RecipeContext } from "../Context/Context";
-import { Link, useNavigate } from "react-router";
+import { Link } from "react-router";
 import { MdDeleteForever } from "react-icons/md";
 import { toast } from "react-toastify";
 
 const MyRecipe = () => {
   const context = useContext(RecipeContext);
-  const navigate = useNavigate();
+
   const [loading, setLoading] = useState(true);
   const [userRecipe, setUserRecipe] = useState<any[]>([]);
 
