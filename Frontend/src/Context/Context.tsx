@@ -17,6 +17,7 @@ type Props = {
 };
 
 const BackUrl = import.meta.env.VITEBACKENDURL;
+console.log("BackUrl:", BackUrl);
 
 const api = axios.create({
   baseURL: BackUrl,
