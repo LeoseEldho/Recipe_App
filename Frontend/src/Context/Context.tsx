@@ -16,7 +16,8 @@ type Props = {
   children: ReactNode;
 };
 
-const BackUrl = import.meta.env.VITEBACKENDURL;
+// const BackUrl = import.meta.env.VITEBACKENDURL;
+const BackUrl = "https://recipe-app-3-x9u0.onrender.com"
 console.log("BackUrl:", BackUrl);
 
 const api = axios.create({
