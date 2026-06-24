@@ -4,6 +4,7 @@ import { RecipeContext } from "../Context/Context";
 import { BsStopwatch } from "react-icons/bs";
 import { Link, useNavigate } from "react-router";
 import { toast } from "react-toastify";
+import { BackUrl } from "../Context/Context";
 
 const Home = () => {
   const context = useContext(RecipeContext);
@@ -105,7 +106,7 @@ const Home = () => {
                 <div className="h-56 relative">
                   <img
                     className="w-full h-full object-cover"
-                   src={`${import.meta.env.VITEBACKENDURL}/image/${x.image}`}
+                   src={`${BackUrl}/image/${x.image}`}
                     alt={x.name}
                   />
                   <div className="absolute top-3 left-2 p-2 rounded-full border-gray-400 border inline-block items-center bg-black">

@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
 import { RecipeContext } from "../Context/Context";
 import { toast } from "react-toastify";
+import { BackUrl } from "../Context/Context";
 
 const DetailRecipe = () => {
   const { id } = useParams();
@@ -67,7 +68,7 @@ const DetailRecipe = () => {
       <div className="grid lg:grid-cols-2 gap-12 mb-12">
         <div className="rounded-3xl overflow-hidden border border-gray-400">
           <img
-            src={`${import.meta.env.VITEBACKENDURL}/image/${recipe.image}`}
+            src={`${BackUrl}/image/${recipe.image}`}
             className="w-full h-96 object-cover"
             loading="lazy"
             alt={recipe.title}

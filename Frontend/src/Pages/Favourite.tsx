@@ -4,7 +4,7 @@ import { BsStopwatch } from "react-icons/bs";
 import { FaHeart } from "react-icons/fa";
 import { Link } from "react-router";
 import { toast } from "react-toastify";
-
+import { BackUrl } from "../Context/Context";
 const Favourite = () => {
   const context = useContext(RecipeContext);
   const [favRecipes, setFavRecipes] = useState<any[]>([]);
@@ -78,7 +78,7 @@ const Favourite = () => {
               <div className="h-56 relative bg-zinc-900">
                 <img
                   className="w-full h-full object-cover"
-                  src={`${import.meta.env.VITEBACKENDURL}/image/${x.image}`}
+                  src={`${BackUrl}/image/${x.image}`}
                   loading="lazy"
                   alt={x.title}
                   onError={(e) => {

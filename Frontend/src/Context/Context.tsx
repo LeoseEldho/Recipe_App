@@ -17,7 +17,7 @@ type Props = {
 };
 
 // const BackUrl = import.meta.env.VITEBACKENDURL;
-const BackUrl = "https://recipe-app-3-x9u0.onrender.com"
+export const BackUrl = "https://recipe-app-3-x9u0.onrender.com"
 console.log("BackUrl:", BackUrl);
 
 const api = axios.create({
